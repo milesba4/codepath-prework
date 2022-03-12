@@ -159,6 +159,9 @@ transition: .5s;
     background:orange;
 }
 
+#gameButnArea{
+  box-shadow: 1px 5px 10px 1px rgba(0,0,0,.5) /* shadow effect on game buttons*/
+  }
 #timer{
 border-radius: 50%;
 }

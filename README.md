@@ -57,14 +57,12 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 Since I am new to using Javascript, I ended up using W3 schools, stackOverflow, and developerMozilla alot. Especially for the timer.
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-
 A massive challenge for me when creating this project was implementing the timer. I used the setTimeout(), setInterval, clearTimeout() and clearInterval() functions and faced a a lot of issues when trying to use them. One major issue I faced was trying to reset the timer when pressing the stop button. I had found a way for the timer to start once the user presses the start button, but struggled for at least an hour figuring out how to stop and reset the time once a user presses the stop button. Developer Mozilla and StackOverflow were a massive help for me when tackling this problem. After doing some searching, I figured out that clearInterval() and clearTimeout() are interchangeable and in order to use them on a setInterval function, the setInteval function must be assigned to a variable. After finding that out, I assigned my setInterval function to the variable 'clock': ``` let clock = setInterval(updateTimer, 1000)```  and used the clearInterval on the clock variable (which stored the setInterval function): ```clearInterval((clock, time = 0));```. When I placed this in my stopGame() function, this stopped the timer when the user presses the stop button. It not only stopped the countdown but also reset it to 0:00.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-
 If I had a few more hours to work on this project, I would've spent more time making my website look neater to the user and put more time into fixing an issue that I noticed with my timer. I've noticed that I tend to underestimate the importance of front-end design and dedicate far more time to perfecting back-end functionality. To make the game more engaging to the player, I would probably add more flashy colors to the background and add images to the game buttons when clicked. Something that I also noticed, later on, was that the timer that appears runs out one or two seconds before the alert pops up that the player has run out of time. Given more time, I would've focused more on trying to synchronize the two features.
 
 

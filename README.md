@@ -34,7 +34,10 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app!
+- [x] The game buttons have Organ (instrument) sounds when pressed
+- [x] The user gets an alert everytime they guess incorrectly (maximum of 3 strikes)
+- [x] The start button highlights when user hovers over it
+- [x] Timer resets when user presses stop button.
 
 ## Video Walkthrough (GIF)
 
@@ -46,20 +49,21 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ![](http://g.recordit.co/zc8qTwScmR.gif)
 ### Random pattern generated every new game, User gets next clue after correct guess, Playback speeds up on each turn
 ![](http://g.recordit.co/ODBEaq1Rmf.gif)
-![](gif4-link-here)
+### Guess all of the game buttons correctly and win the game!
+![](http://g.recordit.co/lGBtrcOEFx.gif)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+Since I am new to using Javascript, I ended up using W3 schools, stackOverflow, and developerMozilla alot. Especially for the timer.
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+A massive challenge for me when creating this project was implementing the timer. I used the setTimeout(), setInterval, clearTimeout() and clearInterval() functions and faced a few issues when trying to use them. One major issue I faced was trying to reset the timer when presses the stop button. I had found a way for the timer to start once the user presses the startbutton, but struggled for at least an hour figuring out how to stop and reset the time once a user presses the stop button. Developer Mozilla and StackOverflow was a massive help for me when tackling this problem. After doing some searching, I figured out that clearInterval() and clearTimeout() are interchangeable and in order to use them on a setInterval function, the setInteval function must be assigned to a variable. After finding that out, I assigned my setInterval function to the variable 'clock': ``` let clock = setInterval(updateTimer, 1000)```  and used the clearInterval on the clock variable (which stored the setInterval function): ```clearInterval((clock, time = 0));```. When I placed this in my stopGame() function, this stopped the timer when the user presses the stop button. It not only stopped the countdown but also reset it to 0:00.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+If I had a few more hours to work on this project, I would've spent more time making my website look more aesthetically pleasing to the user and put more time into fixing an issue that I noticed with my timer. Something that I tend to underestimate is a
 
 
 

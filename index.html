@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Light and sound memory game!</title>
+    <script src="/script.js" defer></script>
+   
+  </head>
+  
+<body>
+<b class= "Timer">Timer</b> <button id = "timer">1:30</button>
+  <div class="wrapper">
+      <div class="content" role="main">
+        <!-- This is the start of content for our page -->
+        <h1 class="title">Welcome to the light and sound memory game!</h1>
+        <button id="startBtn" onclick="startGame()">Start</button>
+        <button id="stopBtn" onclick="stopGame()" class="hidden">Stop</button>
+        <div id="gameButnArea">
+          <audio src="https://cdn.glitch.global/d4da394c-aa29-426f-8bfe-b6a4a664d40d/A%23m_Bbm7VoxOrgan_01_588.mp3?v=1646902466221" id="Audio1"></audio>
+          <button id="butn1" onmousedown="playMyAudio(1)" onmouseup="pauseMyAudio(1)" onclick="guess(1)"></button>
+          <audio src="https://cdn.glitch.global/d4da394c-aa29-426f-8bfe-b6a4a664d40d/C%23_DbMaj7VoxOrgan_01_588.mp3?v=1646902473403" id ="Audio2"></audio>
+          <button id="butn2" onmousedown="playMyAudio(2)" onmouseup="pauseMyAudio(2)" onclick="guess(2)"></button>
+          <audio src="https://cdn.glitch.global/d4da394c-aa29-426f-8bfe-b6a4a664d40d/Fm_Fm7Hammond_01_588.mp3?v=1646902487418" id="Audio3"></audio>
+          <button id="butn3" onmousedown="playMyAudio(3)" onmouseup="pauseMyAudio(3)" onclick="guess(3)"></button>
+          <audio src ="https://cdn.glitch.global/d4da394c-aa29-426f-8bfe-b6a4a664d40d/Fm_Ab13M1Organ_01_588.mp3?v=1646902487445" id= "Audio4"></audio>
+          <button id="butn4" onmousedown="playMyAudio(4)" onmouseup="pauseMyAudio(4)" onclick="guess(4)"></button>
+          <audio src = "https://cdn.glitch.global/d4da394c-aa29-426f-8bfe-b6a4a664d40d/G%23m_G7OrganProphet5_01_588%20(1).mp3?v=1646902489563" id="Audio5"></audio>
+          <button id="butn5" onmousedown="playMyAudio(5)" onmouseup="pauseMyAudio(5)" onclick="guess(5)"></button>
+          <audio src="https://cdn.glitch.global/d4da394c-aa29-426f-8bfe-b6a4a664d40d/F%23_Cm7b9Hammond_01_588.mp3?v=1646902484261" id ="Audio6"></audio>
+          <button id="butn6" onmousedown="playMyAudio(6)" onmouseup="pauseMyAudio(6)" onclick="guess(6)"></button>
+        </div>
+      </div>
+        <!-- Instructions on using this project -->
+        <div class="instructions">
+          <p>
+            <b>How to play:</b>
+            Repeat back the pattern by pressing the buttons.
+          </p>
+        </div>
+    
+  </div>
+</body>
+</html>
+ 

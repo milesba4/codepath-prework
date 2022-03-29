@@ -47,8 +47,8 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ![](http://g.recordit.co/TwweAFjlU4.gif)
 ### User gets 3 strikes
 ![](http://g.recordit.co/3J8p45esME.gif)
-### Random pattern generated every new game, User gets next clue after correct guess, Playback speeds up on each turn
-![](http://g.recordit.co/ODBEaq1Rmf.gif)
+### Random pattern generated every new game, User gets next clue after correct guess, Playback speeds up on each turn (right side of screen)
+![](http://g.recordit.co/CzWpdH2KD1.gif)
 ### Guess all of the game buttons correctly and win the game!
 ![](http://g.recordit.co/lGBtrcOEFx.gif)
 

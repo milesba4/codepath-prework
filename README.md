@@ -50,7 +50,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ### Random pattern generated every new game
 ![](http://g.recordit.co/eMvxz4ZInr.gif)
 ### User gets next clue after correct guess, Playback speeds up on each turn 
-![](https://im2.ezgif.com/tmp/ezgif-2-58f664f5f6.gif)
+![](https://im4.ezgif.com/tmp/ezgif-4-fcb02f8f01.gif)
 ### Guess all of the game buttons correctly and win the game!
 ![](http://g.recordit.co/lGBtrcOEFx.gif)
 
